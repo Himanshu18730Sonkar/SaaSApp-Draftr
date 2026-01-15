@@ -3,7 +3,7 @@ import Kobe from '../../../../assets/brand/kobe.webp'
 import Event from '../../../../assets/brand/event.webp'
 import Oslo from '../../../../assets/brand/oslo.webp'
 import Swiss from '../../../../assets/brand/swiss.webp'
-import Berlin from '../../../../assets/brand/Berlin.webp'
+import Berlin from '../../../../assets/brand/berlin.webp'
 import Signature from '../../../../assets/brand/signature.webp'
 import Uturn from '../../../../assets/brand/uturn.webp'
 
