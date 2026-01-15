@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import Hero from "../Home/components/HeroSection/Hero";
 import Demonstrate from "./components/Demonstrate/Demonstrate";
 const Price = lazy(() => import("../Home/components/pricing/Price"));
