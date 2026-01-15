@@ -9,9 +9,14 @@ export default {
       colors: {
         primary: 'hsl(240, 3%, 6%)',
         secondary: 'hsl(225, 3%, 28%)',
+        'brand-purple': '#5538f0',
+        'brand-light': '#dad4ff',
       },
       maxWidth: {
         '350': '87.5rem',
+        '77.25': '19.3125rem',
+      },
+      minWidth: {
         '77.25': '19.3125rem',
       },
       gap: {
