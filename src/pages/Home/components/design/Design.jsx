@@ -1,7 +1,7 @@
 import React from "react";
 import { m } from "framer-motion";
 import { useNavigate } from "react-router";
-import ScreenImg from '../../../../assets/mobileScreen.webp'
+import ScreenImg from '../../../../assets/MobileScreen.webp'
 
 const Design = () => {
   const navigate = useNavigate();
