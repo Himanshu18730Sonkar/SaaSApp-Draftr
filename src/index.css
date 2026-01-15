@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 37.5rem;
+  --breakpoint-md: 54.25rem;
+  --breakpoint-lg: 70.25rem;
+  --breakpoint-xl:96.25rem;
+  --color-primary: hsl(240, 3%, 6%);
+  --color-secondary:hsl(225, 3%, 28%);
+
+}
+@layer utilities {
+  /* Custom Animation Class 
+     - dasharray: 100 (beam length) 1000 (gap)
+     - dashoffset start: 100 (pushes it back so it starts hidden)
+     - dashoffset end: -350 (pushes it forward to the end of the line)
+  */
+  .animate-flow-to-point {
+    stroke-dasharray: 100 1000;
+    stroke-dashoffset: 100;
+    animation: flowToPoint 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+}
+
+@keyframes flowToPoint {
+  0% {
+    stroke-dashoffset: 100; /* Start hidden at top */
+    opacity: 0;
+  }
+  10% {
+    opacity: 1; /* Visible entering */
+  }
+  75% {
+    stroke-dashoffset: -350; /* Arrive at bottom */
+    opacity: 1;
+  }
+  85% {
+    stroke-dashoffset: -350; /* Pause at bottom */
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: -350; /* Stay at bottom */
+    opacity: 0; /* Fade out */
+  }
+}
