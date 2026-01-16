@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --breakpoint-sm: 37.5rem;
@@ -11,17 +9,10 @@
   --color-secondary: hsl(225, 3%, 28%);
 }
 
-@layer utilities {
-  /* Custom Animation Class 
-     - dasharray: 100 (beam length) 1000 (gap)
-     - dashoffset start: 100 (pushes it back so it starts hidden)
-     - dashoffset end: -350 (pushes it forward to the end of the line)
-  */
-  .animate-flow-to-point {
-    stroke-dasharray: 100 1000;
-    stroke-dashoffset: 100;
-    animation: flowToPoint 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-  }
+.animate-flow-to-point {
+  stroke-dasharray: 100 1000;
+  stroke-dashoffset: 100;
+  animation: flowToPoint 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 @keyframes flowToPoint {
